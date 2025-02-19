@@ -1,5 +1,4 @@
 #include "raylib.h"
-// this is a comment
 
 int main(void){
   
