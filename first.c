@@ -1,24 +1,28 @@
 #include "raylib.h"
 // this is a comment
+
 int main(void){
-  const int screenWidth = 800;
-  const int screenHeight = 450;
+  
+  const screenWidth = 800;
+  const screenHeight = 450;
 
 
-  InitWindow(screenWidth, screenHeight, "raylib example");
+  initWindow(screenWidth, screenHeight, "just testing");
+
 
   SetTargetFPS(60);
 
-  while (!WindowShouldClose()){
+  while (!WindowShouldClose){
     BeginDrawing();
 
       ClearBackground(RAYWHITE);
-      
-      DrawText("this is a window", 190, 200, 20, LIGHTGRAY);
+
+      DrawText("this is a test##", 190, 200, 20, LIGHTGRAY);
 
     EndDrawing();
   }
 
   CloseWindow();
+
   return 0;
 }
